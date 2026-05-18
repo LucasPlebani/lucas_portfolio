@@ -1,0 +1,25 @@
+.formations-card {
+  grid-column: span 12;
+}
+.timeline {
+  display: grid;
+  gap: 18px;
+}
+.timeline-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+}
+.timeline-dot {
+  width: 52px; height: 52px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(46, 29, 33, 0.08);
+  font-size: 18px;
+}
+.timeline-content h4 { margin: 0 0 6px; }
+.timeline-content p { margin: 0; color: var(--ink-soft); line-height: 1.7; }
+.timeline-year { font-family: var(--font-mono); color: var(--ink-soft); }

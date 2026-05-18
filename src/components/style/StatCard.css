@@ -1,0 +1,20 @@
+.stat-card {
+  display: grid;
+  gap: 16px;
+}
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+.stat-value {
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.stat-label {
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+.stat-card .stat-row + .stat-row { margin-top: 16px; }

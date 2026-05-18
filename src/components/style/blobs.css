@@ -1,0 +1,26 @@
+.blob-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  filter: blur(40px) saturate(110%);
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.85;
+  will-change: transform;
+  animation: float 18s ease-in-out infinite;
+}
+.blob-1 { background: var(--pastel-blue);   width: 520px; height: 520px; left: -120px;  top: -140px; animation-delay: -2s; }
+.blob-2 { background: var(--pastel-pink);   width: 420px; height: 420px; right: -100px; top: 8%;     animation-delay: -7s; }
+.blob-3 { background: var(--pastel-yellow); width: 560px; height: 560px; left: 28%;     top: 36%;    animation-delay: -12s; opacity: 0.7; }
+.blob-4 { background: var(--pastel-green);  width: 480px; height: 480px; right: 4%;     bottom: -120px; animation-delay: -4s; }
+.blob-5 { background: var(--pastel-pink);   width: 360px; height: 360px; left: -80px;   bottom: 8%;  animation-delay: -9s; opacity: 0.7; }
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(40px, -30px) scale(1.06); }
+  66%      { transform: translate(-30px, 25px) scale(0.95); }
+}

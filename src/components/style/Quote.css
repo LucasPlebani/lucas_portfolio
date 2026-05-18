@@ -1,0 +1,28 @@
+.quote-card {
+  grid-column: span 12;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,249,244,0.95) 100%);
+}
+.quote-mark {
+  display: inline-block;
+  font-size: 64px;
+  line-height: 0.8;
+  color: var(--pink);
+  margin-bottom: 18px;
+}
+.quote-text {
+  margin: 0 0 22px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.quote-who {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.quote-avatar {
+  width: 60px; height: 60px;
+  border-radius: 20px;
+  background: rgba(46, 29, 33, 0.08);
+}
+.quote-name { font-weight: 700; }
+.quote-role { color: var(--ink-soft); }
