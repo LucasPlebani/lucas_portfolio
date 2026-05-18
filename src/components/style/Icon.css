@@ -1,1 +1,40 @@
-.btn-icon { display: inline-flex; align-items: center; justify-content: center; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: var(--r-pill);
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); }
+.btn-ink {
+  background: var(--ink);
+  color: var(--bg);
+  box-shadow: 0 8px 18px -10px rgba(46,29,33,0.55);
+}
+.btn-ink:hover { background: #1a0e11; }
+.btn-pink {
+  background: var(--pink);
+  color: var(--ink);
+  box-shadow: 0 8px 18px -10px rgba(255,140,148,0.85);
+}
+.btn-pink:hover { background: #ff7984; }
+.btn-blue {
+  background: var(--blue);
+  color: var(--ink);
+}
+.btn-blue:hover { background: #5cb6dd; }
+.btn-ghost {
+  background: rgba(255,255,255,0.55);
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.85); }
+.btn-icon { width: 16px; height: 16px; stroke-width: 2; }
+

@@ -1,3 +1,4 @@
+/* nav */
 .topnav {
   display: flex;
   align-items: center;
@@ -48,6 +49,7 @@
 }
 .nav-links a:hover { background: rgba(46, 29, 33, 0.05); color: var(--ink); }
 .nav-links a.active { background: var(--ink); color: var(--bg); }
+
 .status-dot {
   width: 8px; height: 8px; border-radius: 50%;
   background: var(--green);
