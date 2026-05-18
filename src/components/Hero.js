@@ -1,6 +1,7 @@
 "use client";
 
 import Icon from "./Icon";
+import smileAvatar from "../../public/memoji_hello.png";
 
 export default function Hero({ onContact }) {
   return (
@@ -39,6 +40,7 @@ export default function Hero({ onContact }) {
       </div>
       <div className="hero-avatar" aria-label="Avatar de Gigi">
         <div className="avatar-face">
+          <img src={smileAvatar.src} alt="Avatar de Gigi" className="avatar-img" />
           <span className="face-eye left" />
           <span className="face-eye right" />
           <span className="face-blush left" />
@@ -47,7 +49,7 @@ export default function Hero({ onContact }) {
         </div>
         <span className="avatar-sticker s1">⌘ café</span>
         <span className="avatar-sticker s2">+2 ans XP</span>
-        <span className="avatar-sticker s3">Paris, FR</span>
+        <span className="avatar-sticker s3">Montpellier, FR</span>
         <span className="avatar-mono">avatar.png</span>
       </div>
     </section>
