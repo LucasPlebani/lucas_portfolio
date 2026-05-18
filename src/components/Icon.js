@@ -8,6 +8,8 @@ export default function Icon({ name, className = "btn-icon" }) {
     clock: <><circle cx="12" cy="12" r="9" stroke="currentColor" fill="none" /><path d="M12 7v5l3 2" stroke="currentColor" fill="none" strokeLinecap="round" /></>,
     spark: <path d="M12 3v6M12 15v6M3 12h6M15 12h6M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3" stroke="currentColor" fill="none" strokeLinecap="round" />,
     download: <><path d="M12 4v12M6 12l6 6 6-6" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" /><path d="M4 20h16" stroke="currentColor" fill="none" strokeLinecap="round" /></>,
+    coffee: <><path d="M6 15h10a3 3 0 003-3v-4a3 3 0 00-3-3H6a3 3 0 00-3 3v4a3 3 0 003 3z" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" /><path d="M16 8h2a2 2 0 010 4h-2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" /><path d="M9 6c0-1.657 1.343-3 3-3s3 1.343 3 3" stroke="currentColor" fill="none" strokeLinecap="round" /><path d="M9.5 4.5c0-1.1.9-2 2-2s2 0.9 2 2" stroke="currentColor" fill="none" strokeLinecap="round" /><path d="M7 11h10" stroke="currentColor" fill="none" strokeLinecap="round" /></>,
+    heart: <path d="M12 21s-9-5.4-9-11.3S5.4 2 12 7.1 21 3.7 21 9.7 12 21 12 21z" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round" />,
     check: <path d="M5 12l5 5L20 7" stroke="currentColor" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
   };
 

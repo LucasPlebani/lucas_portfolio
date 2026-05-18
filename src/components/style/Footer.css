@@ -15,6 +15,14 @@
   gap: 16px;
   flex-wrap: wrap;
 }
+
 .footer-links { display: flex; gap: 14px; }
 .footer-links a { text-decoration: none; }
 .footer-links a:hover { color: var(--ink); }
+.footer-icon { width: 16px; height: 16px; stroke-width: 2; vertical-align: text-bottom; display: inline-block; margin: 0 0.15em 0 0; }
+.coffee-img-footer{
+  width: 16px;
+  height: 16px;
+}
+.heart-img-footer{width: 16px;
+  height: 16px;}

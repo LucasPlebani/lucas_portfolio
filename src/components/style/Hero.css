@@ -84,49 +84,28 @@
   bottom: 12px; right: 14px;
 }
 .avatar-face {
-  width: 70%;
+  width: 80%;
+  max-width: 460px;
   aspect-ratio: 1;
   border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 1rem 0.5rem;
   background:
-    radial-gradient(circle at 35% 30%, rgba(255,255,255,0.6) 0%, transparent 40%),
+    radial-gradient(circle at 50% 38%, rgba(255,255,255,0.65) 0%, transparent 38%),
     linear-gradient(160deg, var(--pink) 0%, #ff9a7c 50%, var(--yellow) 100%);
-  position: relative;
   box-shadow:
-    0 20px 40px -16px rgba(46,29,33,0.30),
+    0 24px 48px -22px rgba(46,29,33,0.30),
     0 1px 0 rgba(255,255,255,0.8) inset;
 }
-.face-eye {
-  position: absolute;
-  width: 11%; height: 11%;
-  border-radius: 50%;
-  background: var(--ink);
-  top: 40%;
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-.face-eye.left  { left: 28%; }
-.face-eye.right { right: 28%; }
-.face-blush {
-  position: absolute;
-  width: 14%; height: 9%;
-  border-radius: 50%;
-  background: rgba(255, 140, 148, 0.65);
-  top: 55%;
-  filter: blur(2px);
-}
-.face-blush.left  { left: 18%; }
-.face-blush.right { right: 18%; }
-.face-smile {
-  position: absolute;
-  left: 38%;
-  top: 60%;
-  width: 24%;
-  height: 14%;
-  border: 3px solid var(--ink);
-  border-top: transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-}
+
 .avatar-sticker {
   position: absolute;
   background: var(--bg);
@@ -142,6 +121,11 @@
 .avatar-sticker.s1 { top: 14px; left: 14px; transform: rotate(-6deg); }
 .avatar-sticker.s2 { bottom: 36px; left: 12px; transform: rotate(4deg); background: var(--yellow); border-color: rgba(0,0,0,0.08); }
 .avatar-sticker.s3 { top: 28px; right: 14px; transform: rotate(8deg); background: var(--pastel-green); border-color: rgba(0,0,0,0.06); }
+
+.coffee-img{
+  width: 24px;
+  height: 24px;
+}
 
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; padding: 28px; }

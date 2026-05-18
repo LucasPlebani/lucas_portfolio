@@ -1,8 +1,8 @@
 "use client";
 
 import Icon from "./Icon";
-import smileAvatar from "../../public/memoji_hello.png";
-
+import smileAvatar from "../../public/memoji_hello.webp";
+import latte from "../../public/latte.png";
 export default function Hero({ onContact }) {
   return (
     <section className="card hero" data-screen-label="01 Hero">
@@ -41,17 +41,12 @@ export default function Hero({ onContact }) {
       <div className="hero-avatar" aria-label="Avatar de Gigi">
         <div className="avatar-face">
           <img src={smileAvatar.src} alt="Avatar de Gigi" className="avatar-img" />
-          <span className="face-eye left" />
-          <span className="face-eye right" />
-          <span className="face-blush left" />
-          <span className="face-blush right" />
-          <span className="face-smile" />
         </div>
-        <span className="avatar-sticker s1">⌘ café</span>
-        <span className="avatar-sticker s2">+2 ans XP</span>
-        <span className="avatar-sticker s3">Montpellier, FR</span>
-        <span className="avatar-mono">avatar.png</span>
-      </div>
+          <span className="avatar-sticker s1"><img src={latte.src} alt="Latte" className="coffee-img" /> café</span>
+          <span className="avatar-sticker s2">+2 ans XP</span>
+          <span className="avatar-sticker s3">Montpellier, FR</span>
+          <span className="avatar-mono">avatar.png</span>
+        </div>
     </section>
   );
 }
