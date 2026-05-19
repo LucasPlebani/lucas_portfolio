@@ -8,12 +8,19 @@ export default function Projects({ projects }) {
           <span className="card-eyebrow">/ derniers projets en production</span>
           <h2 className="section-title">Quelques <em>réalisations</em> en production.</h2>
         </div>
-        <a className="btn btn-ghost" href="#"><Icon name="github" /> Tout voir sur GitHub</a>
       </div>
+      
       <div className="projects-grid">
-        {projects.map((p) => (
+        {projects.filter((p) => p.id !== "p1").map((p) => (
           <article key={p.id} className="project">
-            <div className={`project-thumb ${p.thumb}`}>
+            <div className={`project-thumb ${p.img ? "project-thumb-image" : p.thumb}`}>
+              {p.img ? (
+                <img
+                  src={p.img.src ? p.img.src : p.img}
+                  alt={`${p.title} cover`}
+                  className="project-thumb-img"
+                />
+              ) : null}
               <span className="thumb-glyph">{p.glyph}</span>
               <span className="thumb-mono">{p.mono}</span>
             </div>

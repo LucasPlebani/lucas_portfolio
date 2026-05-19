@@ -1,3 +1,8 @@
+import gedCover from "../assets/ged.webp";
+import rlsCover from "../assets/rls.webp";
+import fhCover from "../assets/fh.webp";
+import losudCover from "../assets/losud.webp";
+
 export const PROJECTS = [
   {
     id: "p1",
@@ -13,6 +18,7 @@ export const PROJECTS = [
   {
     id: "p2",
     title: "Repro Languedoc — Portail GED",
+    img: gedCover,
     desc: "Site vitrine et portail GED from scratch avec dashboard Strapi CMS. Dématérialisation des workflows de signature électronique.",
     stack: ["React", "Node.js", "Strapi", "Tailwind CSS"],
     glyph: "Rl",
@@ -23,6 +29,7 @@ export const PROJECTS = [
     {
     id: "p3",
     title: "Repro Languedoc — Site web",
+    img: rlsCover,
     desc: "Maintenance et évolution du site vitrine de l'entreprise, intégrant des fonctionnalités de gestion de contenu et d'optimisation SEO.",
     stack: ["WordPress", "PHP", "JavaScript", "SEO"],
     glyph: "Ls",
@@ -34,6 +41,7 @@ export const PROJECTS = [
       {
     id: "p4",
     title: "forme-hotel — Site web",
+    img: fhCover,
     desc: "Maintenance et évolution du site de l'hôtel, intégrant des fonctionnalités de gestion de contenu et d'optimisation SEO pour améliorer la visibilité en ligne.",
     stack: ["WordPress", "PHP", "JavaScript", "SEO"],
     glyph: "Fh",
@@ -45,6 +53,7 @@ export const PROJECTS = [
   {
     id: "p5",
     title: "Losud — Outil de Gestion",
+    img: losudCover,
     desc: "Développement d'un logiciel interne de gestion de stock, incluant le pilotage de périphériques matériels via interface port série.",
     stack: ["JavaScript", "Node.js", "Hardware API"],
     glyph: "Ls",
@@ -120,10 +129,10 @@ export const DEV_PROJECTS = [
     title: "Mario Cart — Plateforme E-commerce Multi-commerces",
     desc: "Conception et développement d'une plateforme e-commerce distribuée basée sur une architecture microservices. Gestion indépendante des services métiers : produits, commandes, utilisateurs — chaque service déployé de façon autonome via Docker. Interface frontend multi-framework : React (back-office) + Angular (front-office). ",
     stack: ["React", "Angular", "Node.js","Python", "Docker", "Mongo DB", "Microservices"],
-    glyph: "Mi",
-    thumb: "t7",
+    glyph: "Mc",
+    thumb: "t1",
     mono: "/07 — dev tool",
-    live: "https://example.com/data-sync",
+    live: "#",
     repo: "https://github.com/username/data-sync"
   },
   {
@@ -131,8 +140,8 @@ export const DEV_PROJECTS = [
     title: "Infra Backend — App MVC",
     desc: "Application Node.js/Express MVC entièrement conteneurisée. Orchestration docker-compose, script d'init MySQL et configuration de l'environnement.",
     stack: ["Docker", "Node.js", "MySQL", "DevOps"],
-    glyph: "Dk",
-    thumb: "t3",
+    glyph: "Mvc",
+    thumb: "t2",
     mono: "/08 — conteneurisation",
     live: "#",
     repo: "https://github.com/LucasPlebani/exo_devops"
@@ -142,10 +151,10 @@ export const DEV_PROJECTS = [
     title: "Ataraxia — POC Cybersécurité & IA ",
     desc: "Développement d'un outil de détection intelligente d'intrusions par analyse de fichiers PCAP. Pipeline IA : scripts Python pour extraction, traitement et classification des menaces via Machine Learning. Dashboard interactif React avec visualisation en temps réel des attaques détectées.",
     stack: ["React", "Python", "Machine Learning", "Analyse réseau (PCAP)"],
-    glyph: "Dp",
-    thumb: "t6",
+    glyph: "Atx",
+    thumb: "t3",
     mono: "/06 — projet dev",
-    live: "https://example.com/dev-project",
+    live: "",
     repo: "https://github.com/LucasPlebani/Ataraxia"
   },
   {
@@ -154,7 +163,7 @@ export const DEV_PROJECTS = [
     desc: "Outil de stress-testing applicatif. Implémentation de patterns avancés (circuit breaker, retry logic) pour évaluer la récupération des systèmes sous charge.",
     stack: ["JavaScript", "React", "Stress-Testing"],
     glyph: "Tr",
-    thumb: "t2",
+    thumb: "t1",
     mono: "/08 — qa & performance",
     live: "#",
     repo: "https://github.com/LucasPlebani/testeur-de-r-silience-d-API-" 
@@ -165,7 +174,7 @@ export const DEV_PROJECTS = [
     desc: "Analyse prédictive de recommandations produits. Utilisation de TypeScript, Prisma et PostgreSQL, avec un environnement entièrement conteneurisé.",
     stack: ["TypeScript", "PostgreSQL", "Prisma", "Docker"],
     glyph: "Db",
-    thumb: "t1", 
+    thumb: "Mr", 
     mono: "/06 — data & architecture",
     live: "#",
     repo: "https://github.com/LucasPlebani/SQLPostgree"
@@ -175,8 +184,8 @@ export const DEV_PROJECTS = [
     title: "Grimoire — API Sécurisée",
     desc: "Backend complet pour une bibliothèque en ligne. Gestion de base de données NoSQL, authentification sécurisée (JWT) et système de notation dynamique.",
     stack: ["Node.js", "MongoDB", "Auth / API"],
-    glyph: "Mg",
-    thumb: "t1",
+    glyph: "Mvg",
+    thumb: "t3",
     mono: "/09 — architecture backend",
     live: "#",
     repo: "https://github.com/LucasPlebani/Mon-Vieux-Grimoire" 
@@ -187,7 +196,7 @@ export const DEV_PROJECTS = [
     desc: "Marketplace de jeux vidéo développée avec Symfony. Architecture MVC stricte, ORM Doctrine, dashboard EasyAdmin et système de favoris/avis.",
     stack: ["PHP", "Symfony", "Twig", "MySQL"],
     glyph: "Ag",
-    thumb: "t2",
+    thumb: "t1",
     mono: "/08 — architecture mvc",
     live: "#",
     repo: "https://github.com/LucasPlebani/allgames_symfony"

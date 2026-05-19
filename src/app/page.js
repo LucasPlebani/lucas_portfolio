@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import StatCard from "../components/StatCard";
+import FlagshipProject from "../components/FlagshipProject";
 import Projects from "../components/Projects";
 import DevProjects from "../components/DevProjects";
 import StackCard from "../components/StackCard";
@@ -13,7 +14,6 @@ import Quote from "../components/Quote";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { DEV_PROJECTS, PROJECTS, STACK, FORMATIONS } from "../data/portfolioData";
-
 export default function Home() {
   const [active, setActive] = useState("hero");
 
@@ -52,6 +52,8 @@ export default function Home() {
         <div className="bento">
             <Hero onContact={() => nav("contact")} />
           <StatCard />
+          <FlagshipProject />
+
           <Projects projects={PROJECTS} />
           <DevProjects projects={DEV_PROJECTS} />
           <StackCard stack={STACK} />

@@ -8,6 +8,8 @@ export default function DevProjects({ projects }) {
           <span className="card-eyebrow">/ projets de développement</span>
           <h2 className="section-title">Prototypes et projets <em>en développement</em>.</h2>
         </div>
+        <a className="btn btn-ghost" href="#"><Icon name="github" /> Tout voir sur GitHub</a>
+
       </div>
       <div className="projects-grid">
         {projects.map((p) => (
