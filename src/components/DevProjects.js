@@ -1,14 +1,13 @@
 import Icon from "./Icon";
 
-export default function Projects({ projects }) {
+export default function DevProjects({ projects }) {
   return (
-    <section className="card projects-card" id="projects" data-screen-label="02 Projets">
+    <section className="card projects-card" id="dev-projects" data-screen-label="03 Projets dev">
       <div className="projects-head">
         <div>
-          <span className="card-eyebrow">/ derniers projets en production</span>
-          <h2 className="section-title">Quelques <em>réalisations</em> en production.</h2>
+          <span className="card-eyebrow">/ projets de développement</span>
+          <h2 className="section-title">Prototypes et projets <em>en développement</em>.</h2>
         </div>
-        <a className="btn btn-ghost" href="#"><Icon name="github" /> Tout voir sur GitHub</a>
       </div>
       <div className="projects-grid">
         {projects.map((p) => (

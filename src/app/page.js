@@ -5,19 +5,20 @@ import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import StatCard from "../components/StatCard";
 import Projects from "../components/Projects";
+import DevProjects from "../components/DevProjects";
 import StackCard from "../components/StackCard";
 import NowCard from "../components/NowCard";
 import Formations from "../components/Formations";
 import Quote from "../components/Quote";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { PROJECTS, STACK, FORMATIONS } from "../data/portfolioData";
+import { DEV_PROJECTS, PROJECTS, STACK, FORMATIONS } from "../data/portfolioData";
 
 export default function Home() {
   const [active, setActive] = useState("hero");
 
   useEffect(() => {
-    const ids = ["projects", "stack", "formations", "contact"];
+    const ids = ["projects","dev-projects", "stack", "formations", "contact"];
     const onScroll = () => {
       for (let i = ids.length - 1; i >= 0; i--) {
         const el = document.getElementById(ids[i]);
@@ -52,6 +53,7 @@ export default function Home() {
             <Hero onContact={() => nav("contact")} />
           <StatCard />
           <Projects projects={PROJECTS} />
+          <DevProjects projects={DEV_PROJECTS} />
           <StackCard stack={STACK} />
           <NowCard />
           <Formations formations={FORMATIONS} />
