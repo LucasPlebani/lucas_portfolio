@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Icon from "./Icon";
 import smileAvatar from "../../public/memoji_hello.webp";
 import latte from "../../public/latte.png";
@@ -45,11 +46,17 @@ export default function Hero({ onContact }) {
           <span className="chip blue"><span className="chip-dot" />Python</span>
         </div>
       </div>
-      <div className="hero-avatar" aria-label="Avatar de Gigi">
+      <div className="hero-avatar" aria-label="Avatar de Lucas">
         <div className="avatar-face">
-          <img src={smileAvatar.src} alt="Avatar de Gigi" className="avatar-img" />
+          <Image 
+            src={smileAvatar} 
+            alt="Avatar de Lucas souriant et faisant un signe de la main" 
+            className="avatar-img" 
+            sizes="(max-width: 640px) 176px, (max-width: 1024px) 280px, 368px"
+            priority 
+          />
         </div>
-          <span className="avatar-sticker s1"><img src={latte.src} alt="Latte" className="coffee-img" /> café</span>
+          <span className="avatar-sticker s1"><Image src={latte} alt="Latte" className="coffee-img" width={24} height={24} /> café</span>
           <span className="avatar-sticker s2">+3 ans XP</span>
           <span className="avatar-sticker s3">Montpellier, FR</span>
           <span className="avatar-mono">avatar.png</span>

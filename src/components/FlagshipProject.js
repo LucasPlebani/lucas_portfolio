@@ -20,7 +20,7 @@ export default function FlagshipProject() {
         
         <div className="flagship-card-left">
           <div className="flagship-thumb">
-            <Image src={biblioCover} alt="biblio cover" width={800} height={720} className="flagship-cover-image" />
+            <Image src={biblioCover} alt="biblio cover" width={800} height={720} className="flagship-cover-image" priority fetchPriority="high" />
           </div>
 
           <div className="flagship-content">

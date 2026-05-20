@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  images: {
+    // Optimisation aggressive des images
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 export default nextConfig;

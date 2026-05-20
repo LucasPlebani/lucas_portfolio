@@ -1,4 +1,5 @@
 import Icon from "./Icon";
+import Image from "next/image";
 import MotionCard from "./MotionCard";
 
 export default function Projects({ projects }) {
@@ -16,10 +17,12 @@ export default function Projects({ projects }) {
           <article key={p.id} className="project">
             <div className={`project-thumb ${p.img ? "project-thumb-image" : p.thumb}`}>
               {p.img ? (
-                <img
-                  src={p.img.src ? p.img.src : p.img}
+                <Image
+                  src={p.img}
                   alt={`${p.title} cover`}
                   className="project-thumb-img"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               ) : null}
               <span className="thumb-glyph">{p.glyph}</span>
