@@ -28,7 +28,7 @@ export default function FlagshipProject() {
             </p>
             <div className="flagship-badges">
               {p.stack?.map((s) => (
-                <span key={s} className="flagship-chip">{s}</span>
+                <span key={s} className="chip">{s}</span>
               ))}
             </div>
             <div className="flagship-actions">

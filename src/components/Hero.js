@@ -15,7 +15,7 @@ export default function Hero({ onContact }) {
         </h1>
         <p className="hero-sub">
           Je conçois des produits web rapides, soignés et faciles à utiliser — du croquis Figma jusqu'au déploiement.
-          Basée à Paris, ouverte aux projets freelance et aux alternances.
+          Basée à Montpellier, ouverte aux projets et aux alternances.
         </p>
         <div className="hero-cta">
           <button className="btn btn-pink" onClick={onContact}>
@@ -27,17 +27,19 @@ export default function Hero({ onContact }) {
           }}>
             Voir les projets
           </a>
-          <a className="btn btn-ghost" href="#"><Icon name="download" /> CV (pdf)</a>
+          <a className="btn btn-ghost" href="/CV_LUCAS_PLEBANI.pdf" target="_blank" rel="noopener noreferrer"><Icon name="download" /> CV (pdf)</a>
                       <a className="btn btn-ghost" href="https://www.linkedin.com/in/lucas-plebani/">LinkedIn <Icon name="external" /></a>
           
         </div>
         <div className="hero-stack">
           <span className="chip blue"><span className="chip-dot" />React</span>
           <span className="chip blue"><span className="chip-dot" />Next.js</span>
-          <span className="chip green"><span className="chip-dot" />Node</span>
-          <span className="chip green"><span className="chip-dot" />Postgres</span>
+          <span className="chip green"><span className="chip-dot" />Node.js</span>
+          <span className="chip green"><span className="chip-dot" />PostgreSQL</span>
           <span className="chip pink"><span className="chip-dot" />Figma</span>
-          <span className="chip yellow"><span className="chip-dot" />TypeScript</span>
+          <span className="chip yellow"><span className="chip-dot" />JavaScript</span>
+          <span className="chip pink"><span className="chip-dot" />CSS</span>
+          <span className="chip blue"><span className="chip-dot" />Python</span>
         </div>
       </div>
       <div className="hero-avatar" aria-label="Avatar de Gigi">
