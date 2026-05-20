@@ -173,8 +173,8 @@ export const DEV_PROJECTS = [
     title: "Moteur de Recommandation",
     desc: "Analyse prédictive de recommandations produits. Utilisation de TypeScript, Prisma et PostgreSQL, avec un environnement entièrement conteneurisé.",
     stack: ["TypeScript", "PostgreSQL", "Prisma", "Docker"],
-    glyph: "Db",
-    thumb: "Mr", 
+    glyph: "Mr",
+    thumb: "t2", 
     mono: "/06 — data & architecture",
     live: "#",
     repo: "https://github.com/LucasPlebani/SQLPostgree"

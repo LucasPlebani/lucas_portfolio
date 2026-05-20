@@ -5,24 +5,24 @@ export default function NowCard() {
     <section className="card now-card">
       <span className="card-eyebrow">/ en ce moment</span>
       <div className="now-line">
-        <div className="now-icon"><Icon name="spark" className="" /></div>
+        <div className="now-icon"><Icon name="spark" /></div>
         <div className="now-text">
-          <span className="now-label">je construis</span>
-          <span className="now-value">Une plateforme de mentorat<br /><span>pour étudiants en dev — Next 14 + tRPC.</span></span>
+          <span className="now-label">je consolide</span>
+          <span className="now-value">L'architecture de Bibli'O Jouets<br /><span>Scalabilité & CI/CD sous Next.js 16.</span></span>
         </div>
       </div>
       <div className="now-line">
-        <div className="now-icon pink"><Icon name="clock" className="" /></div>
+        <div className="now-icon pink"><Icon name="clock" /></div>
         <div className="now-text">
-          <span className="now-label">j'apprends</span>
-          <span className="now-value">Rust & WebAssembly<br /><span>pour des outils CLI rapides côté dev.</span></span>
+          <span className="now-label">j'explore</span>
+          <span className="now-value">Kubernetes & Terraform<br /><span>pour l'infrastructure as code (IaC).</span></span>
         </div>
       </div>
       <div className="now-line">
-        <div className="now-icon green"><Icon name="pin" className="" /></div>
+        <div className="now-icon green"><Icon name="pin" /></div>
         <div className="now-text">
           <span className="now-label">je cherche</span>
-          <span className="now-value">Une alternance dev fullstack<br /><span>à Paris ou en remote, sept. 2026.</span></span>
+          <span className="now-value">Une alternance DevOps / Expert Systèmes<br /><span>Bac+5 à Montpellier ou Remote (2026).</span></span>
         </div>
       </div>
     </section>
