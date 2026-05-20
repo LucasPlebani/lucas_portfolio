@@ -52,8 +52,8 @@ export default function Contact() {
             </div>
           </div>
           <div className="hero-cta" style={{ marginTop: 22 }}>
-            <a className="btn btn-ghost" href="#"><Icon name="github" /> GitHub</a>
-            <a className="btn btn-ghost" href="#">LinkedIn <Icon name="external" /></a>
+            <a className="btn btn-ghost" href="https://github.com/LucasPlebani"><Icon name="github" /> GitHub</a>
+            <a className="btn btn-ghost" href="https://www.linkedin.com/in/lucas-plebani/">LinkedIn <Icon name="external" /></a>
           </div>
         </div>
 

@@ -28,6 +28,8 @@ export default function Hero({ onContact }) {
             Voir les projets
           </a>
           <a className="btn btn-ghost" href="#"><Icon name="download" /> CV (pdf)</a>
+                      <a className="btn btn-ghost" href="https://www.linkedin.com/in/lucas-plebani/">LinkedIn <Icon name="external" /></a>
+          
         </div>
         <div className="hero-stack">
           <span className="chip blue"><span className="chip-dot" />React</span>
