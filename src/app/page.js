@@ -53,7 +53,6 @@ export default function Home() {
             <Hero onContact={() => nav("contact")} />
           <StatCard />
           <FlagshipProject />
-
           <Projects projects={PROJECTS} />
           <DevProjects projects={DEV_PROJECTS} />
           <StackCard stack={STACK} />
