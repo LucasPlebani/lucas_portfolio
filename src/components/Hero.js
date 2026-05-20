@@ -31,7 +31,7 @@ export default function Hero({ onContact }) {
           }}>
             Voir les projets
           </a>
-          <a className="btn btn-ghost" href="/CV_LUCAS_PLEBANI.pdf" target="_blank" rel="noopener noreferrer"><Icon name="download" /> CV (pdf)</a>
+          <a className="btn btn-ghost" href="/CV_Lucas_Plebani.pdf" target="_blank" rel="noopener noreferrer"><Icon name="download" /> CV (pdf)</a>
                       <a className="btn btn-ghost" href="https://www.linkedin.com/in/lucas-plebani/">LinkedIn <Icon name="external" /></a>
           
         </div>
