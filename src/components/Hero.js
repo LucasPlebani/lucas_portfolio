@@ -59,7 +59,7 @@ export default function Hero({ onContact }) {
           <span className="avatar-sticker s1"><Image src={latte} alt="Latte" className="coffee-img" width={24} height={24} /> café</span>
           <span className="avatar-sticker s2">+3 ans XP</span>
           <span className="avatar-sticker s3">Montpellier, FR</span>
-          <span className="avatar-mono">avatar.png</span>
+          <span className="avatar-mono">lucas.webp</span>
         </div>
       </MotionCard>
   );
