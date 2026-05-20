@@ -13,7 +13,7 @@ export default function StackCard({ stack }) {
             <ul className="stack-list">
               {col.items.map((it) => (
                 <li key={it.label} className="stack-item">
-                  <span className={`tech-mark ${it.color}`}>{it.mark}</span>
+                  <span className={`tech-icon ${it.color}`}>{it.icon}</span>
                   <span>{it.label}</span>
                 </li>
               ))}

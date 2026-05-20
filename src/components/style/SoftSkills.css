@@ -1,0 +1,106 @@
+/* ---------- SOFT SKILLS & ADN ---------- */
+.soft-skills-card {
+  grid-column: span 5;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  background: rgba(255, 250, 244, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+}
+
+.soft-skills-title {
+  margin: 0 0 6px 0;
+  font-size: clamp(28px, 3vw, 34px);
+  font-family: var(--font-display);
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.soft-skills-title em {
+  font-style: italic;
+  color: var(--pink);
+}
+
+.soft-skill-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 18px;
+  border-radius: var(--r-inner);
+  background: #fffaf4b3;
+  border: 1px solid rgba(46, 29, 33, 0.08);
+  box-shadow: 0 12px 26px -20px rgba(46, 29, 33, 0.22);
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+}
+
+.soft-skill-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(46, 29, 33, 0.12);
+  box-shadow: 0 18px 36px -24px rgba(46, 29, 33, 0.24);
+}
+
+.soft-skill-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  border: 1px solid rgba(46, 29, 33, 0.06);
+}
+
+/* Couleurs des icônes utilisant tes variables existantes */
+.soft-skill-icon.blue { 
+  background: linear-gradient(135deg, rgba(97, 218, 251, 0.16), rgba(255, 255, 255, 0.34));
+  color: #0052CC;
+}
+.soft-skill-icon.green { 
+  background: linear-gradient(135deg, rgba(136, 212, 171, 0.16), rgba(255, 255, 255, 0.34));
+  color: #339933;
+}
+.soft-skill-icon.pink { 
+  background: linear-gradient(135deg, rgba(255, 140, 148, 0.16), rgba(255, 255, 255, 0.34));
+  color: #FF5A79;
+}
+.soft-skill-icon.yellow {
+  background: linear-gradient(135deg, rgba(255, 226, 100, 0.16), rgba(255, 255, 255, 0.34));
+  color: #E3B000;
+}
+
+.soft-skill-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.soft-skill-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.soft-skill-desc {
+  margin: 0;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .soft-skills-card {
+    grid-column: span 12;
+    padding: 28px;
+  }
+
+  .soft-skill-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

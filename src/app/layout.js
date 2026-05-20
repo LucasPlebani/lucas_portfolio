@@ -9,7 +9,7 @@ import "../components/style/Projects.css";
 import "../components/style/StackCard.css";
 import "../components/style/NowCard.css";
 import "../components/style/Formations.css";
-import "../components/style/Quote.css";
+import "../components/style/SoftSkills.css";
 import "../components/style/Contact.css";
 import "../components/style/Footer.css";
 import "../components/style/Icon.css";

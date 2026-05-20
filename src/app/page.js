@@ -10,7 +10,7 @@ import DevProjects from "../components/DevProjects";
 import StackCard from "../components/StackCard";
 import NowCard from "../components/NowCard";
 import Formations from "../components/Formations";
-import Quote from "../components/Quote";
+import SoftSkills from "../components/SoftSkills";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { DEV_PROJECTS, PROJECTS, STACK, FORMATIONS } from "../data/portfolioData";
@@ -58,7 +58,7 @@ export default function Home() {
           <StackCard stack={STACK} />
           <NowCard />
           <Formations formations={FORMATIONS} />
-          <Quote />
+          <SoftSkills />
           <Contact />
           <Footer />
         </div>

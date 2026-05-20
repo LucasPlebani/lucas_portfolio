@@ -2,6 +2,15 @@ import gedCover from "../assets/ged.webp";
 import rlsCover from "../assets/rls.webp";
 import fhCover from "../assets/fh.webp";
 import losudCover from "../assets/losud.webp";
+// Import des logos officiels des marques (pack 'si' pour Simple Icons)
+import { 
+  SiNextdotjs, SiReact, SiJavascript, SiTypescript, SiVite, SiTailwindcss, SiHtml5,
+  SiNodedotjs, SiPrisma, SiPython, SiPostgresql, SiMongodb, SiDocker, SiGithubactions, 
+  SiJest, SiJsonwebtokens, SiFigma, SiJira, SiObsidian, SiN8N, SiNotion, SiTrello, SiSlack
+} from "react-icons/si";
+
+// Import d'icônes plus génériques pour les concepts (pack 'fa6' pour FontAwesome 6)
+import { FaNetworkWired, FaServer, FaCubes, FaShieldHalved, FaScaleBalanced, FaRobot, FaCheckDouble } from "react-icons/fa6";
 
 export const PROJECTS = [
   {
@@ -62,66 +71,76 @@ export const PROJECTS = [
   },
 ];
 
+
 export const STACK = {
   front: {
     title: "Frontend",
     num: "01",
     items: [
-      { label: "Next.js 16 ", mark: "Rx", color: "blue" },
-      { label: "React", mark: "Rx", color: "blue" },
-      { label: "JavaScript", mark: "js", color: "yellow" },
-      { label: "TypeScript", mark: "Ts", color: "blue" },
-      { label: "Vite", mark: "Vi", color: "blue" },
-      { label: "Tailwind CSS", mark: "Tw", color: "blue" },
-      { label: "HTML5 / CSS3", mark: "Ht", color: "pink" }
+      { label: "Next.js 16", icon: <SiNextdotjs color="#000000" />, color: "blue" },
+      { label: "React", icon: <SiReact color="#61DAFB" />, color: "pink" },
+      { label: "JavaScript", icon: <SiJavascript color="#F7DF1E" />, color: "green" },
+      { label: "TypeScript", icon: <SiTypescript color="#3178C6" />, color: "blue" },
+      { label: "Vite", icon: <SiVite color="#646CFF" />, color: "blue" },
+      { label: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" />, color: "blue" },
+      { label: "HTML5 / CSS3", icon: <SiHtml5 color="#E34F26" />, color: "pink" }
     ]
   },
   back: {
     title: "Backend & BDD",
     num: "02",
     items: [
-      { label: "Node.js", mark: "Nd", color: "green" },
-      { label: " Prisma ORM", mark: "Pr", color: "green" },
-      { label: "Python / FastAPI", mark: "Py", color: "yellow" },
-      { label: "PostgreSQL", mark: "Pb", color: "blue" },
-      { label: "MongoDB", mark: "Mb", color: "blue" },
-      { label: "API REST", mark: "Api", color: "pink" }
+      { label: "Node.js", icon: <SiNodedotjs color="#339933" />, color: "green" },
+      { label: "Prisma ORM", icon: <SiPrisma color="#2D3748" />, color: "green" },
+      { label: "Python / FastAPI", icon: <SiPython color="#3776AB" />, color: "yellow" },
+      { label: "PostgreSQL", icon: <SiPostgresql color="#4169E1" />, color: "blue" },
+      { label: "MongoDB", icon: <SiMongodb color="#47A248" />, color: "blue" },
+      { label: "API REST", icon: <FaServer color="#888888" />, color: "pink" }
     ]
   },
   devops: {
     title: "DevSecOps & Tests",
     num: "03",
     items: [
-      { label: "Docker / Nginx / OVH", mark: "Dk", color: "blue" },
-      { label: "CI/CD / GitHub Actions", mark: "Gh", color: "yellow" },
-      { label: "Tests Unitaires / Jest", mark: "Jt", color: "green" },
-      { label: "Architecture MME", mark: "Ar", color: "pink" },
-      { label: "Microservices", mark: "Ms", color: "pink" }
-
+      { label: "Docker / Nginx / OVH", icon: <SiDocker color="#2496ED" />, color: "blue" },
+      { label: "CI/CD / GitHub Actions", icon: <SiGithubactions color="#2088FF" />, color: "yellow" },
+      { label: "Tests Unitaires / Jest", icon: <SiJest color="#C21325" />, color: "green" },
+      { label: "Architecture MME", icon: <FaCubes color="#888888" />, color: "pink" },
+      { label: "Microservices", icon: <FaNetworkWired color="#888888" />, color: "pink" }
     ]
   },
   security: {
     title: "Sécurité & Normes",
     num: "04",
     items: [
-      { label: "NextAuth / JWT", mark: "Na", color: "blue" },
-      { label: "Validation stricte (Zod)", mark: "Zd", color: "blue" },
-      { label: "Cybersécurité", mark: "Cs", color: "yellow" },
-      { label: "Conformité RGPD", mark: "Rg", color: "green" }
+      { label: "NextAuth / JWT", icon: <SiJsonwebtokens color="#000000" />, color: "blue" },
+      { label: "Validation stricte (Zod)", icon: <FaCheckDouble color="#3068b7" />, color: "blue" },
+      { label: "Cybersécurité", icon: <FaShieldHalved color="#e5a910" />, color: "yellow" },
+      { label: "Conformité RGPD", icon: <FaScaleBalanced color="#339933" />, color: "green" }
     ]
   },
   tools: {
-    title: "IA, Design & Orga",
+    title: "IA & Design",
     num: "05",
     items: [
-      { label: "LLMs / Prompting", mark: "Ia", color: "pink" },
-      { label: "Figma (UI/UX)", mark: "Fg", color: "pink" },
-      { label: "Scrum / Jira / Trello", mark: "Ag", color: "blue" },
-      { label: "Obsidian (Second Cerveau)", mark: "Ob", color: "green" }
+      { label: "LLMs / Prompting", icon: <FaRobot color="#FF8C94" />, color: "pink" },
+      { label: "Zapier / N8N Automation", icon: <SiN8N color="#FF8C94" />, color: "pink" },
+      { label: "Figma (UI/UX)", icon: <SiFigma color="#F24E1E" />, color: "pink" },
+    ]
+  },
+  organisation: {
+    title: "Organisation & Productivité",
+    num: "06",
+    items: [
+      { label: "Scrum / Jira", icon: <SiJira color="#0052CC" />, color: "blue" },
+      { label: "Obsidian", icon: <SiObsidian color="#483699" />, color: "green" },
+      { label: "Slack / Teams", icon: <SiSlack color="#4A154B" />, color: "pink" },
+      { label: "Trello", icon: <SiTrello color="#0D5DD3" />, color: "pink" },
+      { label: "Notion", icon: <SiNotion color="#FF8C94" />, color: "pink" },
+
     ]
   }
 };
-
 export const DEV_PROJECTS = [
 
   {
