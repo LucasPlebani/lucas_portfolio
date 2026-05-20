@@ -1,8 +1,9 @@
 import Icon from "./Icon";
+import MotionCard from "./MotionCard";
 
 export default function NowCard() {
   return (
-    <section className="card now-card">
+    <MotionCard className="card now-card" delay={0.2}>
       <span className="card-eyebrow">/ en ce moment</span>
       
       {/* 1. L'IMPACT (Projet actuel) */}
@@ -32,6 +33,6 @@ export default function NowCard() {
         </div>
       </div>
       
-    </section>
+    </MotionCard>
   );
 }

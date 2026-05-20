@@ -1,8 +1,9 @@
 import Icon from "./Icon";
+import MotionCard from "./MotionCard";
 
 export default function DevProjects({ projects }) {
   return (
-    <section className="card projects-card" id="dev-projects" data-screen-label="03 Projets dev">
+    <MotionCard className="card projects-card" id="dev-projects" data-screen-label="03 Projets dev" delay={0.1}>
       <div className="projects-head">
         <div>
           <span className="card-eyebrow">/ projets de développement</span>
@@ -36,6 +37,6 @@ export default function DevProjects({ projects }) {
           </article>
         ))}
       </div>
-    </section>
+    </MotionCard>
   );
 }

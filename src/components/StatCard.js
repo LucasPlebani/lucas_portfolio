@@ -1,6 +1,8 @@
+import MotionCard from "./MotionCard";
+
 export default function StatCard() {
   return (
-    <section className="card stat-card">
+      <MotionCard className="card stat-card" delay={0.15}>
       <span className="card-eyebrow">aperçu</span>
        <div className="stat-row">
         <span className="stat-value">5<sup style={{ fontSize: "0.45em", color: "var(--pink)" }}>+</sup></span>
@@ -22,6 +24,6 @@ export default function StatCard() {
         <span className="stat-value" style={{ background: "linear-gradient(95deg, var(--blue), var(--green))", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>98<span style={{ fontSize: "0.55em" }}>/100</span></span>
         <span className="stat-label">lighthouse moyen</span>
       </div>
-    </section>
+      </MotionCard>
   );
 }

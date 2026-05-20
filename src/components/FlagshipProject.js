@@ -2,12 +2,13 @@ import "./style/FlagshipProject.css";
 import Image from "next/image";
 import { PROJECTS } from "../data/portfolioData";
 import biblioCover from "../assets/biblio.webp";
+import MotionCard from "./MotionCard";
 export default function FlagshipProject() {
   const p = PROJECTS.find((x) => x.id === "p1");
   if (!p) return null;
 
   return (
-    <section className="card projects-card" id="flagship" data-screen-label="01 Projet phare">
+    <MotionCard className="card projects-card" id="flagship" data-screen-label="01 Projet phare" delay={0.05}>
       <div className="projects-head">
         <div>
           <span className="card-eyebrow">/ flagship product</span>
@@ -54,6 +55,6 @@ export default function FlagshipProject() {
           </div>
         </aside>
       </div>
-    </section>
+    </MotionCard>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Icon from "./Icon";
+import MotionCard from "./MotionCard";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -53,7 +54,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="card contact-card" id="contact" data-screen-label="05 Contact">
+    <MotionCard className="card contact-card" id="contact" data-screen-label="05 Contact" delay={0.15}>
       <div className="contact-wrap">
         <div className="contact-intro">
           <span className="card-eyebrow">/ contact</span>
@@ -112,6 +113,6 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    </section>
+    </MotionCard>
   );
 }

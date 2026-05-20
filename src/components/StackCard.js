@@ -1,6 +1,8 @@
+import MotionCard from "./MotionCard";
+
 export default function StackCard({ stack }) {
   return (
-    <section className="card stack-card" id="stack" data-screen-label="03 Stack">
+    <MotionCard className="card stack-card" id="stack" data-screen-label="03 Stack" delay={0.1}>
       <span className="card-eyebrow">/ stack technique</span>
       <h2 className="section-title">Ma boîte à <em>outils</em>.</h2>
       <div className="stack-grid">
@@ -21,6 +23,6 @@ export default function StackCard({ stack }) {
           </div>
         ))}
       </div>
-    </section>
+    </MotionCard>
   );
 }

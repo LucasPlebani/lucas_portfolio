@@ -3,10 +3,13 @@
 import Icon from "./Icon";
 import smileAvatar from "../../public/memoji_hello.webp";
 import latte from "../../public/latte.png";
+import MotionCard from "./MotionCard";
+
 export default function Hero({ onContact }) {
   return (
-    <section className="card hero" data-screen-label="01 Hero">
+      <MotionCard className="card hero" data-screen-label="01 Hero" delay={0}>
       <div className="hero-content">
+        
         <span className="hero-hello"><span className="wave">👋</span> Salut, moi c'est</span>
         <h1 className="hero-title">
           Lucas.<br />
@@ -51,6 +54,6 @@ export default function Hero({ onContact }) {
           <span className="avatar-sticker s3">Montpellier, FR</span>
           <span className="avatar-mono">avatar.png</span>
         </div>
-    </section>
+      </MotionCard>
   );
 }

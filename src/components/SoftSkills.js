@@ -1,9 +1,10 @@
 import { FaLightbulb, FaPuzzlePiece, FaFutbol, FaUsers } from "react-icons/fa6";
+import MotionCard from "./MotionCard";
 import "./style/SoftSkills.css";
 
 export default function SoftSkills() {
   return (
-    <section className="card soft-skills-card">
+    <MotionCard className="card soft-skills-card" delay={0.15}>
       <span className="card-eyebrow">/ au-delà du code</span>
       
       <h3 className="soft-skills-title">
@@ -50,6 +51,6 @@ export default function SoftSkills() {
         </div>
       </div>
 
-    </section>
+    </MotionCard>
   );
 }

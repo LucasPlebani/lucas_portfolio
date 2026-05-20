@@ -1,5 +1,7 @@
 "use client";
 
+import MotionCard from "./MotionCard";
+
 export default function Nav({ active, onNav }) {
   const links = [
     { id: "projects", label: "Projets" },
@@ -9,7 +11,7 @@ export default function Nav({ active, onNav }) {
   ];
 
   return (
-    <nav className="topnav">
+    <MotionCard as="nav" className="topnav" delay={0}>
       <div className="brand">
         <span className="brand-mark" />
         <span>Lucas<span style={{ color: "var(--ink-mute)" }}>.dev</span></span>
@@ -34,6 +36,6 @@ export default function Nav({ active, onNav }) {
         <span className="status-dot" />
         Dispo en alternance
       </span>
-    </nav>
+    </MotionCard>
   );
 }

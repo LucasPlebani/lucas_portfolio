@@ -1,6 +1,8 @@
+import MotionCard from "./MotionCard";
+
 export default function Formations({ formations }) {
   return (
-    <section className="card formations-card" id="formations" data-screen-label="04 Parcours">
+    <MotionCard className="card formations-card" id="formations" data-screen-label="04 Parcours" delay={0.25}>
       <span className="card-eyebrow">/ parcours</span>
       <h2 className="section-title">Mes <em>formations</em>.</h2>
       <div className="timeline">
@@ -15,6 +17,6 @@ export default function Formations({ formations }) {
           </div>
         ))}
       </div>
-    </section>
+    </MotionCard>
   );
 }
