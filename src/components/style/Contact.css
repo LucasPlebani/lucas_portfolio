@@ -32,6 +32,10 @@
   gap: 10px;
   margin-top: 18px;
 }
+.mail-contact{
+  text-decoration: none;
+  cursor: pointer;
+}
 .contact-meta-row {
   display: flex;
   align-items: center;

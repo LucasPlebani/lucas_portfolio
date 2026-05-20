@@ -21,7 +21,7 @@
 .btn-ink:hover { background: #1a0e11; }
 .btn-pink {
   background: var(--pink);
-  color: var(--ink);
+  color: #ffffff;
   box-shadow: 0 8px 18px -10px rgba(255,140,148,0.85);
 }
 .btn-pink:hover { background: #ff7984; }

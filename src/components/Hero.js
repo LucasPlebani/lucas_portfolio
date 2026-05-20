@@ -45,7 +45,7 @@ export default function Hero({ onContact }) {
           <img src={smileAvatar.src} alt="Avatar de Gigi" className="avatar-img" />
         </div>
           <span className="avatar-sticker s1"><img src={latte.src} alt="Latte" className="coffee-img" /> café</span>
-          <span className="avatar-sticker s2">+2 ans XP</span>
+          <span className="avatar-sticker s2">+3 ans XP</span>
           <span className="avatar-sticker s3">Montpellier, FR</span>
           <span className="avatar-mono">avatar.png</span>
         </div>
