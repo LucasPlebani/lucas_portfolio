@@ -34,7 +34,7 @@ export default function FlagshipProject() {
             </div>
             <div className="flagship-actions">
               {p.live && p.live !== "#" && p.live !== "" ? (
-                <a className="flagship-cta" href={p.live} target="_blank" rel="noreferrer">Visiter la plateforme</a>
+                <a className="cta btn btn-blue" href={p.live} target="_blank" rel="noreferrer">Visiter la plateforme</a>
               ) : null}
             </div>
           </div>

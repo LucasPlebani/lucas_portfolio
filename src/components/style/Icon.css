@@ -27,7 +27,7 @@
 .btn-pink:hover { background: #ff7984; }
 .btn-blue {
   background: var(--blue);
-  color: var(--ink);
+  color: #ffffff;
 }
 .btn-blue:hover { background: #5cb6dd; }
 .btn-ghost {

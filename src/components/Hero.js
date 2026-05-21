@@ -18,11 +18,10 @@ export default function Hero({ onContact }) {
           <br /><span style={{ fontSize: "0.5em", fontWeight: 500, color: "var(--ink-soft)", letterSpacing: "-0.01em" }}>React · Next.js · Node.js</span>
         </h1>
         <p className="hero-sub">
-          Je conçois des produits web rapides, soignés et faciles à utiliser — du croquis Figma jusqu'au déploiement.
-          Basée à Montpellier, ouverte aux projets et aux alternances.
+          Développeur passionné par le produit et l'infrastructure, je conçois des solutions web performantes de A à Z. Basé à Montpellier, je suis ouvert aux projets et à la recherche d'une alternance.
         </p>
         <div className="hero-cta">
-          <button className="btn btn-pink" onClick={onContact}>
+          <button className="btn btn-blue" onClick={onContact}>
             Contactez-moi <Icon name="arrow" />
           </button>
           <a className="btn btn-ghost" href="#projects" onClick={(e) => {

@@ -108,7 +108,7 @@ export default function Contact() {
             <textarea id="f-msg" rows="5" placeholder="Parlez-moi de votre projet, du timing, du budget approximatif…" value={form.message} onChange={(e) => setField("message", e.target.value)} disabled={isLoading} />
             <span className="field-hint">{errors.message}</span>
           </div>
-          <button type="submit" className="btn btn-pink" disabled={isLoading} style={{ opacity: isLoading ? 0.7 : 1 }}>
+          <button type="submit" className="btn btn-blue" disabled={isLoading} style={{ opacity: isLoading ? 0.7 : 1 }}>
             {isLoading ? "Envoi en cours..." : "Envoyer le message"} <Icon name="arrow" />
           </button>
         </form>
