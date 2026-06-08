@@ -8,7 +8,12 @@ export default function FlagshipProject() {
   if (!p) return null;
 
   return (
-    <MotionCard className="card projects-card" id="flagship" data-screen-label="01 Projet phare" delay={0.05}>
+    <MotionCard
+      className="card projects-card"
+      id="flagship"
+      data-screen-label="01 Projet phare"
+      delay={0.05}
+    >
       <div className="projects-head">
         <div>
           <span className="card-eyebrow">/ flagship product</span>
@@ -17,24 +22,44 @@ export default function FlagshipProject() {
       </div>
 
       <div className="flagship-inner">
-        
         <div className="flagship-card-left">
           <div className="flagship-thumb">
-            <Image src={biblioCover} alt="biblio cover" width={800} height={720} className="flagship-cover-image" priority fetchPriority="high" />
+            <Image
+              src={biblioCover}
+              alt="biblio cover"
+              width={800}
+              height={720}
+              className="flagship-cover-image"
+              priority
+              fetchPriority="high"
+            />
           </div>
 
           <div className="flagship-content">
             <p className="flagship-description">
-              Plateforme de location avec une architecture monolithique modulaire (MME) conçue pour évolutivité et isolation des domaines métier. Pipeline CI/CD entièrement automatisé pour tests et déploiement (Jest → Prod) et intégration Stripe Billing pour la facturation.
+              Plateforme de location avec une architecture monolithique
+              modulaire (MME) conçue pour évolutivité et isolation des domaines
+              métier. Pipeline CI/CD entièrement automatisé pour tests et
+              déploiement (Jest → Prod) et intégration Stripe Billing pour la
+              facturation.
             </p>
             <div className="flagship-badges">
               {p.stack?.map((s) => (
-                <span key={s} className="chip">{s}</span>
+                <span key={s} className="chip">
+                  {s}
+                </span>
               ))}
             </div>
             <div className="flagship-actions">
               {p.live && p.live !== "#" && p.live !== "" ? (
-                <a className="cta btn btn-blue" href={p.live} target="_blank" rel="noreferrer">Visiter la plateforme</a>
+                <a
+                  className="cta btn btn-blue"
+                  href={p.live}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visiter la plateforme
+                </a>
               ) : null}
             </div>
           </div>
@@ -47,11 +72,22 @@ export default function FlagshipProject() {
           </div>
           <div className="flagship-metric">
             <div className="flagship-metric-value">SecOps</div>
-            <div className="flagship-metric-label">Zod · JWT · Rate Limiting</div>
+            <div className="flagship-metric-label">
+              Zod · JWT · Rate Limiting
+            </div>
           </div>
           <div className="flagship-metric">
+            <div className="flagship-metric-value"> architecture MME</div>
+            <div className="flagship-metric-label">
+              Architecture modulaire (MME) pour isolation des domaines métier
+            </div>
+          </div>
+
+          <div className="flagship-metric">
             <div className="flagship-metric-value">100% Automatisé</div>
-            <div className="flagship-metric-label">Pipeline CI/CD (tests → prod)</div>
+            <div className="flagship-metric-label">
+              Pipeline CI/CD (tests → prod)
+            </div>
           </div>
         </aside>
       </div>

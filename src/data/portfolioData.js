@@ -15,9 +15,9 @@ import { FaNetworkWired, FaServer, FaCubes, FaShieldHalved, FaScaleBalanced, FaR
 export const PROJECTS = [
   {
     id: "p1",
-    title: "Bibli'O Jouets — SaaS Puériculture",
+    title: "Bibli'O Jouets — SaaS location de jouet et article de Puériculture",
     desc: "Plateforme de location avec architecture monolithique modulaire. Paiement Stripe Billing, APIs Route Handlers et pipeline CI/CD complet.",
-    stack: ["Next.js 16", "React 19", "PostgreSQL", "Docker", "Stripe"],
+    stack: ["Next.js 16", "React 19", "PostgreSQL", "Docker", "Stripe", "CI/CD", "Auth / API", "BPMN"],
     glyph: "Bj",
     thumb: "t1",
     mono: "/01 — startup saas",
